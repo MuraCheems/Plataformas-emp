@@ -2,6 +2,8 @@
 <head>
     <title>Login-Registro</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
 </head>
 <body>
     
@@ -10,38 +12,43 @@
     <div class="flex-container">           
         <div class="menu item1"><a href="about.html">  Acerca  </a></div>
         <div class="menu item3"><a href="Login-registro.html">  Login </a></div>
-        <div class="menu item3"><a href="index.html">  Galeria de frutas </a></div>
+        <div class="menu item3" id="fruticas" ><a  href="index.html">  Galeria de frutas </a></div>
    </div>
 
     <div class="hero">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-button" onclick="login()">Login</button>
+                <button type="button" class="toggle-button" onclick="loginanimation()">Login</button>
                 <button type="button" class="toggle-button" onclick="registro()">Registrarse</button> 
+
                 </div>
                 <div class="forgot-password">
                    
                     <a class="pass-button" href="recordar.html">Forgot Password</a>
 
                </div>
+               
+               <form method="POST" class="input-group" id="login" >
+                <input type="text" name="usuario" class="input-field" placeholder="User Id" required>
+                <input type="text" name="contra" class="input-field" placeholder="Enter Password" required>
+                <button onclick="login(this.form.usuario.value, this.form.contra.value);">Login</button>
 
-               <form class="input-group" id="login" >
-                <input type="text" name="" class="input-field" placeholder="User Id" required>
-                <input type="text" name="" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"> <span>Remember Password</span>
-                <button type="submit" class="submit-btn">Login</button>
                </form>
 
-               <form class="input-group" id="registro" >
-                <input type="text" name="" class="input-field" placeholder="User Id" required>
-                <input type="email" name="" class="input-field" placeholder="Email Id" required>
-                <input type="text" name="" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"> <span>Agreed to terms</span>
-                <button type="submit" class="submit-btn">Register</button>
+               <form method="POST" class="input-group" id="registro" >
+                
+                <input type="text" name="usuario" class="input-field" placeholder="User Id" required>
+                <input type="text" name="nombre" class="input-field" placeholder="Nombre" required>
+                <input type="email" name="correo" class="input-field" placeholder="Email Id" required>
+                <input type="text" name="contra" class="input-field" placeholder="Enter Password" required>
+
+                <button onclick="register(this.form.usuario.value,this.form.correo.value, this.form.contra.value, this.form.nombre.value);">Register</button>
                </form>
         </div>
     </div>
+
+    <script src="script.js"> </script>
 
     <script>
         var x = document.getElementById("login");
@@ -54,11 +61,13 @@
             z.style.left = "110px";  
         }
 
-        function login(){
+        function loginanimation(){
             x.style.left = "50px";
             y.style.left = "450px";
             z.style.left = "0px";  
         }
+
+       
 
     </script>
     
