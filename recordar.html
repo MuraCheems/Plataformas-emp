@@ -22,9 +22,11 @@
                 <div class="forgot-password">              
                  
                </div>
-               <form class="input-group" id="login" >
-                <input type="email" name="" class="input-field" placeholder="Email Id" required>      
-                <button type="submit" class="submit-btn">Recordar</button>       
+               <form method="POST" class="input-group" id="login" >
+                <input type="email" name="Email" class="input-field" placeholder="Email Id" required>
+                <input type="user" name="usuario" class="input-field" placeholder="Usuario" required>
+
+                <button onclick="recordar(this.form.usuario.value, this.form.Email.value)" >Recordar</button>       
                </form>
 
              
@@ -33,22 +35,7 @@
         </div>
     </div>
 
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("registro");
-        var z  = document.getElementById("btn");
-
-        function registro(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";  
-        }
-
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";  
-        }
+    <script src="script.js">
 
     </script>
     
