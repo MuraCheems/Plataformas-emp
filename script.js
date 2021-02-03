@@ -22,6 +22,7 @@ function login(usuario,contra)
 {
     if(localStorage.getItem(usuario)==contra){
       alert("Has iniciado sesion");
+      window.open("index.html");
     }else{
       alert("Contresena equivocada o usuario incorrecto")
         }       
