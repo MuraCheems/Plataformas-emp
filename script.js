@@ -2,7 +2,7 @@
 
 
 
-
+//Funcion para registrasrse en el localstorage
 function register(usuario,correo,contra,nombre)
 {
     if(localStorage.getItem(correo) == null&&correo!=""&&usuario!=""&&contra!=""&&nombre!="")
@@ -17,7 +17,7 @@ function register(usuario,correo,contra,nombre)
     }
   }
 
-
+//Funcion para hacer login al usuario y redirecionar
 function login(usuario,contra)
 {
     if(localStorage.getItem(usuario)==contra){
@@ -28,7 +28,7 @@ function login(usuario,contra)
         }       
     }
 
-
+//Funcion del localstorage para acordar contresena
 function recordar(usuario, correo){
   if(localStorage.getItem(correo) == usuario){
 
@@ -39,7 +39,7 @@ function recordar(usuario, correo){
   }
 }
 
-
+//Animacion de login-registro
 var x = document.getElementById("login");
 var y = document.getElementById("registro");
 var z  = document.getElementById("btn");
