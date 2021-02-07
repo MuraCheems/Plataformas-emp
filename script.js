@@ -1,7 +1,6 @@
 
 
-
-
+window.onload = onloadfunc();
 //Funcion para registrasrse en el localstorage
 function register(usuario,correo,contra,nombre)
 {
@@ -40,9 +39,7 @@ function recordar(usuario, correo){
 }
 
 //Animacion de login-registro
-var x = document.getElementById("login");
-var y = document.getElementById("registro");
-var z  = document.getElementById("btn");
+
 
 function registro(){
     x.style.left = "-400px";
@@ -54,6 +51,13 @@ function loginanimation(){
     x.style.left = "50px";
     y.style.left = "450px";
     z.style.left = "0px";  
+}
+
+
+function onloadfunc (){
+var x = document.getElementById("login");
+var y = document.getElementById("registro");
+var z  = document.getElementById("btn");
 }
 
 
