@@ -8,7 +8,7 @@
 .bodies{
     background-color:  white;
     font-style: italic;   
-    background-image: url(https://www.xtrafondos.com/wallpapers/resized/playa-tropical-2842.jpg?s=large);
+    background-image: url(img/fondito.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,7 +118,7 @@ color: grey;
 .mega-container{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,4), url(https://www.xtrafondos.com/wallpapers/resized/playa-tropical-2842.jpg?s=large));
+    background-image: linear-gradient(rgba(0,0,0,4), url(img/fondito.jpg));
     background-position: center;
     background-size: cover;
     position: absolute;  
@@ -236,6 +236,5 @@ body{
     background-size: cover;
 }
 .menuValencia{
-    
     opacity: 0;
 }
