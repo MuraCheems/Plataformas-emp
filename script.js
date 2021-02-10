@@ -1,5 +1,4 @@
 
-
 window.onload = onloadfunc();
 //Funcion para registrasrse en el localstorage
 function register(usuario,correo,contra,nombre)
@@ -15,7 +14,6 @@ function register(usuario,correo,contra,nombre)
         alert("Usuario ya existe")
     }
   }
-
 //Funcion para hacer login al usuario y redirecionar
 function login(usuario,contra)
 {
@@ -26,7 +24,6 @@ function login(usuario,contra)
       alert("Contresena equivocada o usuario incorrecto")
         }       
     }
-
 //Funcion del localstorage para acordar contresena
 function recordar(usuario, correo){
   if(localStorage.getItem(correo) == usuario){
@@ -37,28 +34,23 @@ function recordar(usuario, correo){
     alert("El correo o el usuario no existen, revise lo que escribio");
   }
 }
-
 //Animacion de login-registro
-
-
 function registro(){
     x.style.left = "-400px";
     y.style.left = "50px";
     z.style.left = "110px";  
 }
-
 function loginanimation(){
     x.style.left = "50px";
     y.style.left = "450px";
     z.style.left = "0px";  
 }
-
-
 function onloadfunc (){
+//Causa errores
+}
 var x = document.getElementById("login");
 var y = document.getElementById("registro");
 var z  = document.getElementById("btn");
-}
 
 
 
