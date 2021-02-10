@@ -8,7 +8,7 @@
 .bodies{
     background-color:  white;
     font-style: italic;   
-    background-image: url(img/preview.jpg);
+    background-image: url(../img/preview.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,7 +118,7 @@ color: grey;
 .mega-container{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,4), url(img/preview.jpg));
+    background-image: linear-gradient(rgba(0,0,0,4), url(../img/preview.jpg));
     background-position: center;
     background-size: cover;
     position: absolute;  
@@ -229,7 +229,7 @@ span{
 body{
     background-color:  white;
     font-style: italic;   
-    background-image: url(img/valencia.png);
+    background-image: url(../img/valencia.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
